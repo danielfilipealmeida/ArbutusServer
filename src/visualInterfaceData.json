@@ -1,0 +1,73 @@
+[
+ {
+    "type": "slider",
+    "label": "Alpha",
+    "minValue": 0.0,
+    "maxValue": 1.0,
+    "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Brightness",
+ "minValue": -1.0,
+ "maxValue": 1.0,
+ "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Contrast",
+ "minValue": -1.0,
+ "maxValue": 1.0,
+ "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Saturation",
+ "minValue": -1.0,
+ "maxValue": 1.0,
+ "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Red",
+ "minValue": 0.0,
+ "maxValue": 2.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Green",
+ "minValue": 0.0,
+ "maxValue": 2.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Blue",
+ "minValue": 0.0,
+ "maxValue": 2.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Blur",
+ "minValue": 0.0,
+ "maxValue": 10.0,
+ "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Horizontal Blur",
+ "minValue": 0.0,
+ "maxValue": 10.0,
+ "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Vertical Blur",
+ "minValue": 0.0,
+ "maxValue": 10.0,
+ "value": 0.0
+ }
+
+]

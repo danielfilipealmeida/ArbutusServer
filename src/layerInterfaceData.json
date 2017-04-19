@@ -1,0 +1,78 @@
+ [
+  {
+  "type": "preview",
+  "label": "Layer Preview",
+  "layer": 1
+  },
+  {
+  "type": "slider",
+  "label": "Layer Alpha",
+  "minValue": 0.0,
+  "maxValue": 1.0,
+  "value": 1.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Brightness",
+  "minValue": -1.0,
+  "maxValue": 1.0,
+  "value": 0.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Contrast",
+  "minValue": -1.0,
+  "maxValue": 1.0,
+  "value": 0.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Saturation",
+  "minValue": -1.0,
+  "maxValue": 1.0,
+  "value": 0.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Red",
+  "minValue": 0.0,
+  "maxValue": 2.0,
+  "value": 1.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Green",
+  "minValue": 0.0,
+  "maxValue": 2.0,
+  "value": 1.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Blue",
+  "minValue": 0.0,
+  "maxValue": 2.0,
+  "value": 1.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Blur",
+  "minValue": 0.0,
+  "maxValue": 10.0,
+  "value": 0.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Horizontal Blur",
+  "minValue": 0.0,
+  "maxValue": 10.0,
+  "value": 0.0
+  },
+  {
+  "type": "slider",
+  "label": "Layer Vertical Blur",
+  "minValue": 0.0,
+  "maxValue": 10.0,
+  "value": 0.0
+  }
+  
+  ]

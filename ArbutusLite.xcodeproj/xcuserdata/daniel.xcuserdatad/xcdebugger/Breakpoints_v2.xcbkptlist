@@ -6,64 +6,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/ofApp.cpp"
-            timestampString = "510843004.361148"
+            filePath = "../../../libs/openFrameworks/gl/ofGLRenderer.cpp"
+            timestampString = "511188083.947767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "ofApp::setup()"
+            startingLineNumber = "317"
+            endingLineNumber = "317"
+            landmarkName = "ofGLRenderer::draw(const ofImage &amp; image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../ArbutusEngine/src/Library/Engine/Engine.mm"
-            timestampString = "510843381.69077"
+            filePath = "../../../addons/ofxGui/src/ofxGuiGroup.cpp"
+            timestampString = "511295556.741434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
-            landmarkName = "Engine::setActiveVisualInstanceNumberForLayer( unsigned int column, unsigned int layerN )"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "ofxGuiGroup::add(const ofParameterGroup &amp; parameters)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../ArbutusEngine/src/Library/Engine/Set.mm"
-            timestampString = "510844036.310304"
+            filePath = "../../../addons/ofxGui/src/ofxGuiGroup.cpp"
+            timestampString = "511295800.054728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "784"
-            endingLineNumber = "784"
-            landmarkName = "Set::getVisualInstanceInCorrentSet( unsigned int column, unsigned int layerN )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../ArbutusEngine/src/Library/Engine/Scene.mm"
-            timestampString = "510844642.586341"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "Scene::getVisualInstance( unsigned int column, unsigned int layerN )"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "ofxGuiGroup::add(ofParameter &lt;bool&gt; &amp; parameter)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

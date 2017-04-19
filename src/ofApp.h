@@ -2,9 +2,11 @@
 
 #include "ofMain.h"
 #include "Engine.h"
+#include "Interface.hpp"
 
-class ofApp : public ofBaseApp{
+class ofApp : public ofBaseApp {
     Engine engine;
+    Interface interface;
     
 	public:
 		void setup();
@@ -22,4 +24,17 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    static ofApp* instance();
+    static void handleGUIAction(const void * sender, float & value);
+    
+    void handleAction(string parameter, float newValue);
+    
+    
+private:
+
+    /*!
+     */
+    void
+    changeLayer(unsigned int layer);
 };
