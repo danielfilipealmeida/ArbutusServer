@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A896F918EEEFAAA2EDDFDDD779A8F05255AF4541",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A896F918EEEFAAA2EDDFDDD779A8F05255AF4541" : 9223372036854775807,
+    "8D1851B4994CED709E75F1DE491BEC25BE8B0B36" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB1933ED-9E63-49F0-AB15-8A997A2C1506",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A896F918EEEFAAA2EDDFDDD779A8F05255AF4541" : "ArbutusServer\/",
+    "8D1851B4994CED709E75F1DE491BEC25BE8B0B36" : "ArbutusEngine\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ArbutusServer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ArbutusServer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/danielfalmeida\/arbutusengine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D1851B4994CED709E75F1DE491BEC25BE8B0B36"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/danielfalmeida\/arbutuslite.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A896F918EEEFAAA2EDDFDDD779A8F05255AF4541"
+    }
+  ]
+}

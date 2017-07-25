@@ -66,7 +66,13 @@ private:
                    ofxGuiGroup    *parent = NULL
                    );
 
-    
+ 
+    void
+    addToggle(
+              std::string caption,
+              bool value,
+              ofxGuiGroup *parent
+              );
     
     /*!
      */
@@ -111,6 +117,8 @@ private:
                  float & value
                  );
     
+    void
+    handleButtonPress();
     
     string
     getSenderPath(const void * sender);

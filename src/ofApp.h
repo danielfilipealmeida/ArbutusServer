@@ -3,10 +3,15 @@
 #include "ofMain.h"
 #include "Engine.h"
 #include "Interface.hpp"
+#include "ofxTCPServer.h"
+#include "DataHandler.h"
 
 class ofApp : public ofBaseApp {
     Engine engine;
     Interface interface;
+    ofFpsCounter fpsCounter;
+    ofxTCPServer server;
+    DataHandler dataHandler;
     
 	public:
 		void setup();
@@ -29,6 +34,9 @@ class ofApp : public ofBaseApp {
     static void handleGUIAction(const void * sender, float & value);
     
     void handleAction(string parameter, float newValue);
+    
+    void startServer(unsigned int port);
+    
     
     
 private:

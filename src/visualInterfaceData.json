@@ -1,73 +1,120 @@
 [
  {
     "type": "slider",
-    "label": "Alpha",
+    "label": "Visual Alpha",
     "minValue": 0.0,
     "maxValue": 1.0,
     "value": 1.0
  },
  {
  "type": "slider",
- "label": "Brightness",
+ "label": "Visual Brightness",
  "minValue": -1.0,
  "maxValue": 1.0,
  "value": 0.0
  },
  {
  "type": "slider",
- "label": "Contrast",
+ "label": "Visual Contrast",
  "minValue": -1.0,
  "maxValue": 1.0,
  "value": 0.0
  },
  {
  "type": "slider",
- "label": "Saturation",
+ "label": "Visual Saturation",
  "minValue": -1.0,
  "maxValue": 1.0,
  "value": 0.0
  },
  {
  "type": "slider",
- "label": "Red",
+ "label": "Visual Red",
  "minValue": 0.0,
  "maxValue": 2.0,
  "value": 1.0
  },
  {
  "type": "slider",
- "label": "Green",
+ "label": "Visual Green",
  "minValue": 0.0,
  "maxValue": 2.0,
  "value": 1.0
  },
  {
  "type": "slider",
- "label": "Blue",
+ "label": "Visual Blue",
  "minValue": 0.0,
  "maxValue": 2.0,
  "value": 1.0
  },
  {
  "type": "slider",
- "label": "Blur",
+ "label": "Visual Zoom X",
  "minValue": 0.0,
- "maxValue": 10.0,
+ "maxValue": 2.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Visual Zoom Y",
+ "minValue": 0.0,
+ "maxValue": 2.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Visual Center X",
+ "minValue": -2.0,
+ "maxValue": 2.0,
  "value": 0.0
  },
  {
  "type": "slider",
- "label": "Horizontal Blur",
- "minValue": 0.0,
- "maxValue": 10.0,
+ "label": "Visual Center Y",
+ "minValue": -2.0,
+ "maxValue": 2.0,
  "value": 0.0
  },
  {
  "type": "slider",
- "label": "Vertical Blur",
+ "label": "Visual Start",
  "minValue": 0.0,
- "maxValue": 10.0,
+ "maxValue": 1.0,
  "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Visual End",
+ "minValue": 0.0,
+ "maxValue": 1.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Visual Played",
+ "minValue": 0.0,
+ "maxValue": 1.0,
+ "value": 0.0
+ },
+ {
+ "type": "slider",
+ "label": "Visual Loop Mode",
+ "minValue": 1.0,
+ "maxValue": 3.0,
+ "value": 1.0
+ },
+ {
+ "type": "slider",
+ "label": "Visual Direction",
+ "minValue": 1.0,
+ "maxValue": 2.0,
+ "value": 1.0
+ },
+ {
+ "type": "button",
+ "label": "Visual Snap",
+ "value": true
  }
 
 ]

@@ -4,24 +4,39 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>emptyExample Debug.xcscheme_^#shared#^_</key>
+		<key>Arbutus Server Debug.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>emptyExample Release.xcscheme_^#shared#^_</key>
+		<key>Arbutus Server Release.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>tests.xcscheme</key>
+		<key>Unit Tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>65C30D4E1F0AF3A5003F9523</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65C30DAB1F0AF89B003F9523</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65C30DB81F0AFFF0003F9523</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>65FE2A301E7C0D57008ABDCE</key>
 		<dict>
 			<key>primary</key>

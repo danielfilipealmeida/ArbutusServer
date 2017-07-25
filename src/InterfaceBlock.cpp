@@ -54,6 +54,22 @@ InterfaceBlock::setup(
                               );
                 }
             }
+
+            
+            // Toggle
+            if (element["type"].get<std::string>().compare("toggle") == 0) {
+                if (element["label"].is_string() &&
+                    element["value"].is_boolean()
+                    ) {
+                    addToggle(
+                              element["label"].get<std::string>(),
+                              element["value"].get<bool>(),
+                              parent
+                              );
+                }
+            }
+
+            
             
             // Slider
             if (element["type"].get<std::string>().compare("slider") == 0) {
@@ -132,6 +148,7 @@ InterfaceBlock::addLabel(
     parent->add(label->setup(caption));
 }
 
+
 void
 InterfaceBlock::addButton(
                           std::string caption,
@@ -140,8 +157,24 @@ InterfaceBlock::addButton(
     ofxButton *button;
     
     button = new ofxButton();
+    //button->addListener(this, &InterfaceBlock::handleAction);
     parent->add(button->setup(caption));
-              //gui.add(newButton.setup("New"));(caption));
+}
+
+
+void
+InterfaceBlock::addToggle(
+                          std::string caption,
+                          bool value,
+                          ofxGuiGroup *parent
+                          ) {
+    ofxToggle *toggle;
+    //ofParameter<bool> *parameter;
+    
+    toggle = new ofxToggle();
+    //toggle->addListener(this, &InterfaceBlock::handleButtonPress);
+    
+    parent->add(toggle->setup(caption, (bool) value));
 }
 
 
@@ -219,6 +252,11 @@ InterfaceBlock::handleAction(
     instance->handleAction(action, value);
 }
 
+
+void
+InterfaceBlock::handleButtonPress() {
+    cout << "!!!" <<endl;
+}
 
 // this doesn't work--- for deletion
 string

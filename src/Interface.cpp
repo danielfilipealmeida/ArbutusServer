@@ -45,6 +45,7 @@ Interface::Interface() {
                            );
    
     layersData = loadFromFile("layerInterfaceData.json");
+    visualInterfaceData = loadFromFile("visualInterfaceData.json");
 }
 
 
@@ -73,7 +74,6 @@ json
 Interface::prependStringToKeys(json input, string appendString) {
     json output;
     
-    cout << input.dump() << endl;
     for (
          json::iterator it = input.begin();
          it != input.end();
@@ -81,32 +81,18 @@ Interface::prependStringToKeys(json input, string appendString) {
     {
         string newKey;
 
-        /*
-         
-        cout << it.key() << endl;
-        newKey = appendString + it.key();
-        output[newKey] = it.value();
-         */
         if (it->is_array()) {
             json tmp = it.value();
             
             newKey = appendString + tmp[0].get<string>();
-            //output.push_back([newKey, it[1]]);
-            
             output.push_back(json::array({newKey, tmp[1]}));
-            
         }
         else {
-            cout << it.key() << endl;
             newKey = appendString + it.key();
             output[newKey] = it.value();
-
         }
-
     }
 
-    cout << output.dump()src/Interface.hpp << endl;
-    
     return output;
 }
 
@@ -115,20 +101,22 @@ void
 Interface::setup() {
     json currentLayerData;
     json currentLayerState;
+    Engine *engine;
+    Layer *currentLayer;
+    json currentVisualAtCurrentLayerData;
+    VisualInstance *currentVisualAtCurrentLayer;
     
+    json currentVisualAtCurrentLayerState;
+    
+    
+    engine = Engine::getInstance();
     
     currentLayerData = layersData;
-    
-    Engine *engine = Engine::getInstance();
-    Layer *currentLayer;
-    
     currentLayer = engine->getCurrentLayer();
     currentLayerState = currentLayer->getState();
     
     
     currentLayerState = prependStringToKeys(currentLayerState, "Layer ");
-    cout << currentLayerState.dump() << endl;
-    //std::strcat("Layer ", ofToString(engine->getCurrentLayer()))
     
     updateInterfaceBlockDataWithState(currentLayerData, currentLayerState);
     currentLayerData[0]["layer"] = currentLayer->getLayerNumber() + 1;
@@ -146,6 +134,17 @@ Interface::setup() {
                                             ),
                                 200,
                                 0);
+    
+    
+    
+    currentVisualAtCurrentLayerData = visualInterfaceData;
+    currentVisualAtCurrentLayer = currentLayer->getActiveInstance();
+    if (currentVisualAtCurrentLayer != NULL) {
+        currentVisualAtCurrentLayerState = currentVisualAtCurrentLayer->getState();
+        currentVisualAtCurrentLayerState = prependStringToKeys(currentLayerState, "Visual ");
+    }
+    
+    updateInterfaceBlockDataWithState(currentVisualAtCurrentLayerData, currentVisualAtCurrentLayerState);
 
     
     layerPreviews = new InterfaceBlock(
@@ -180,11 +179,9 @@ Interface::setup() {
                                        120
     );
     
-    // setup visual interface
-    std::ifstream i("visualInterfaceData.json");
-    i >> visualInterfaceData;
-    //cout << visualInterfaceData.dump() << endl;
-    visual = new InterfaceBlock(visualInterfaceData, 400,0);
+
+    visual = new InterfaceBlock(currentVisualAtCurrentLayerData, 400,0);
+    
 }
 
 
@@ -216,15 +213,10 @@ Interface::updateInterfaceBlockDataWithState(
 {
     // traverse the state
     for (auto& stateRecord : state) {
-        cout << stateRecord[0]<<endl;
         for (auto& interfaceRecord : interfaceBlockData) {
             if (stateRecord[0].get<string>().compare(interfaceRecord["label"].get<string>()) == 0) {
-                cout << "antes: " << interfaceRecord.dump() <<endl;
                 interfaceRecord["value"] = stateRecord[1];
-                cout << "depois: " << interfaceRecord.dump() << endl;
             }
         }
     }
-    cout << interfaceBlockData.dump() <<endl;
-    
 }
